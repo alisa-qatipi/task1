@@ -6,22 +6,23 @@ import FirstCard from "./Components/Domain/FirstCard";
 function App() {
   // MAKE THE FIRST PART OF TASK 1
 
-
-
   return (
     <div className="App">
       <div className="container-fluid">
         <div className="container ">
-          <div className="task1a align-items-center mt-5 mb-5">
+          <div className="task1a">
             <div className="firstCards d-flex flex-wrap gap-5">
-
-          {first.map((el)=>(
-            <FirstCard icon={el.icon} title={el.title} description={el.description}/>
-          ))}
+              {first.map((el) => (
+                <FirstCard
+                  icon={el.icon}
+                  title={el.title}
+                  description={el.description}
+                />
+              ))}
             </div>
           </div>
-          <div className="task1b align-items-center mt-5 mb-5">
-            <div className="allCards d-flex gap-5">
+          <div className="task1b">
+            <div className="allCards">
               {cardContent.map((content) => (
                 <Cards
                   versionDate={content.versionDate}
@@ -31,7 +32,7 @@ function App() {
                 />
               ))}
             </div>
-            <div className="allCards d-flex gap-5 mt-3">
+            <div className="allCards">
               {cardContent.map((content) => (
                 <Cards
                   versionDate={content.versionDate}
@@ -41,7 +42,7 @@ function App() {
                 />
               ))}
             </div>
-            <div className="allCards d-flex gap-5 mt-3">
+            <div className="allCards">
               {cardContent.map((content) => (
                 <Cards
                   versionDate={content.versionDate}
